@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CJ · Projects</title>
+  <meta name="description" content="Claudea Jennefer: M.S. Computer Science at UChicago, B.A. Statistics at UC Berkeley. AI apps, agents, and data products." />
+  <meta property="og:title" content="Claudea Jennefer" />
+  <meta property="og:description" content="M.S. Computer Science @ UChicago · AI apps, agents & data products" />
+  <meta property="og:image" content="assets/img/portrait.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230b5394'/><text x='50' y='66' font-size='46' font-family='Trebuchet MS' font-weight='700' text-anchor='middle' fill='white'>CJ</text></svg>" />
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo">CJ</a>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="projects.html" class="active">projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+      <h2 class="page-title">Projects</h2>
+      <hr class="divider" />
+
+      <article class="project">
+        <div class="project-media montaj-art" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="reel r1"></div><div class="reel r2"></div><div class="reel r3"></div>
+              <div class="caption">golden hour ✨</div>
+            </div>
+          </div>
+          <div class="timeline">
+            <span style="width:22%"></span><span style="width:14%"></span><span style="width:30%"></span><span style="width:18%"></span>
+          </div>
+        </div>
+        <div class="project-text">
+          <h3>Montaj</h3>
+          <p>
+            A beat-locked, AI-assisted Instagram reel editor. You upload travel photos and clips,
+            and an AI director (Claude) scores each shot and arranges them into a story arc of
+            hook, build, climax, and outro. The app detects the soundtrack's tempo in the
+            browser and snaps cuts to the beat. You can refine the result on a CapCut-style
+            timeline with a live 9:16 preview, transitions, and captions.
+          </p>
+          <p class="meta">Built with: Next.js, TypeScript, Remotion, Claude, Supabase, Clerk</p>
+          <div class="buttons">
+            <a class="button" href="https://github.com/claudea24/montaj" target="_blank" rel="noopener">Github Link</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-media before-after">
+          <img src="assets/img/editor-result.jpg" alt="Original horses next to the edited result where one horse is white" loading="lazy" />
+          <p class="prompt">“change the horse color to white”</p>
+        </div>
+        <div class="project-text">
+          <h3>AI Photo Editor</h3>
+          <p>
+            Edit photos with plain-English instructions. A LangGraph agent finds the subject
+            with GPT-4o, builds a pixel-precise mask, and inpaints with DALL·E 2. It then scores
+            each result on edit quality, preservation, and realism, and retries with a refined
+            prompt until the edit meets your satisfaction threshold.
+          </p>
+          <p class="meta">Built with: Python, LangGraph, GPT-4o, DALL·E 2, Streamlit</p>
+          <div class="buttons">
+            <a class="button" href="https://claude24-ai-image-editor.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+            <a class="button" href="https://github.com/claudea24/ai_image_editor" target="_blank" rel="noopener">Github Link</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="project-media" href="https://boston-transit.vercel.app" target="_blank" rel="noopener">
+          <img src="assets/img/boston-transit.jpg" alt="Boston Transit live map dashboard" loading="lazy" />
+        </a>
+        <div class="project-text">
+          <h3>Boston Transit</h3>
+          <p>
+            A real-time MBTA dashboard that shows every bus, subway, commuter-rail, and ferry
+            vehicle moving on a full-screen map of Boston. Tap any stop for live arrivals, or
+            plan trips that are drawn along real tracks and streets. Routes are ranked by the
+            current weather. A background worker streams GTFS-RT feeds into Supabase Realtime.
+          </p>
+          <p class="meta">Built with: Next.js, MapLibre, Supabase Realtime, Railway, Clerk</p>
+          <div class="buttons">
+            <a class="button" href="https://boston-transit.vercel.app" target="_blank" rel="noopener">Live Site</a>
+            <a class="button" href="https://github.com/claudea24/boston_transit" target="_blank" rel="noopener">Github Link</a>
+          </div>
+        </div>
+      </article>
+
+      <h3 class="sub-title">More projects</h3>
+      <div class="card-grid">
+        <div class="card">
+          <h4>🌍 Travel Bucket List</h4>
+          <p>Discover countries and plan your travels, with a personal bucket list for each user.</p>
+          <p class="meta">Next.js · Supabase · Clerk · RestCountries</p>
+          <a class="text-link" href="https://github.com/claudea24/travel-bucketlist" target="_blank" rel="noopener">Github →</a>
+        </div>
+        <div class="card">
+          <h4>📚 Bookshelf</h4>
+          <p>A personal bookshelf app for keeping track of the books you read.</p>
+          <p class="meta">Next.js 16 · Supabase · Clerk</p>
+          <a class="text-link" href="https://bookshelf-pi-lime.vercel.app" target="_blank" rel="noopener">Live site →</a>
+          <a class="text-link" href="https://github.com/claudea24/bookshelf" target="_blank" rel="noopener">Github →</a>
+        </div>
+        <div class="card">
+          <h4>🎯 AI Hangman</h4>
+          <p>A hangman game powered by an LLM.</p>
+          <p class="meta">Python · OpenAI · Streamlit</p>
+          <a class="text-link" href="https://claudea24-ai-hangman.streamlit.app/" target="_blank" rel="noopener">Play →</a>
+          <a class="text-link" href="https://github.com/claudea24/ai_hangman" target="_blank" rel="noopener">Github →</a>
+        </div>
+        <div class="card">
+          <h4>🗓️ Day Planner</h4>
+          <p>Plan your days with a simple interface that highlights your free time, with Playwright end-to-end tests.</p>
+          <p class="meta">Next.js · TypeScript · Playwright</p>
+          <a class="text-link" href="https://day-planner-ten-indol.vercel.app" target="_blank" rel="noopener">Live site →</a>
+          <a class="text-link" href="https://github.com/claudea24/day-planner" target="_blank" rel="noopener">Github →</a>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Earlier data science work</h3>
+      <ul class="earlier">
+        <li><a href="https://asrobang1.github.io/team2-ethi-mental-state/" target="_blank" rel="noopener">Tie Strength &amp; Well-Being</a>: predicted Facebook friendship tie strength, built in a team of six (Data Scientist)</li>
+        <li><strong>Basketball Player Performance</strong>: compared linear and random-forest models on college player data</li>
+        <li><strong>Spam/Ham Classification</strong>: an email classifier with 89% test accuracy</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Claudea Jennefer</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
